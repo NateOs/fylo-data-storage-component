@@ -23,8 +23,10 @@ export default function Uploader() {
             />
           </svg>
         </div>
-        <div className="actions-container">
-          <div className="actions-container__logo-box">
+
+        {/* begin actions */}
+        <div className="section__actions">
+          <div className="section__actions-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24">
               <path
                 fill="#697ED4"
@@ -32,7 +34,7 @@ export default function Uploader() {
               />
             </svg>
           </div>
-          <div className="actions-container__logo-box">
+          <div className="section__actions-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
               <path
                 fill="#697ED4"
@@ -40,7 +42,7 @@ export default function Uploader() {
               />
             </svg>
           </div>
-          <div className="actions-container__logo-box">
+          <div className="section__actions-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
               <path
                 fill="#697ED4"
@@ -49,6 +51,7 @@ export default function Uploader() {
             </svg>
           </div>
         </div>
+        {/* end actions */}
       </div>
     </section>
   );

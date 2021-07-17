@@ -3,17 +3,21 @@ import React from "react";
 export default function SpaceStat() {
   return (
     <section className="section">
-      <div>
-        <p className="description">
-          You've used <span className="">815 GB</span> of your storage
+      <div className="section__info">
+        <p className="section__desc">
+          You've used <span className="storage-size">815 GB</span> of your storage
         </p>
         {/* Begin progress bar */}
-        <div class="progress-bar">
-          <div data-size="80" class="progress">
-            <div className="progress__indicator"></div>
+        <div class="section__progress-bar">
+          <div data-size="80" class="section__progress">
+            <div className="section__progress-indicator"></div>
           </div>
         </div>
-        {/* end progress bar */}
+			  {/* end progress bar */}
+			  <div className="section__caption flex">
+				  <p>0 GB</p>
+				  <p>1000 GB</p>
+			  </div>
       </div>
     </section>
   );
