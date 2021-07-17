@@ -5,8 +5,6 @@
 body {
   background: url("../images/bg-mobile.png") repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
   font-family: $font-Raleway;
   color: $transparent-white;
 }
@@ -15,8 +13,6 @@ body {
   border: solid red 1px;
   height: 600px;
   width: 85vw;
-  display: flex;
-  flex-direction: column;
 }
 
 .section {
@@ -29,9 +25,9 @@ body {
 }
 
 // utility
-.flex {
-  display: flex;
-}
+// .flex {
+//   display: flex;
+// }
 
 // UploaderComponent
 
