@@ -23,7 +23,8 @@ body {
   background: $neutral-dark-blue;
   border-radius: 10px;
   width: 77%;
-  padding: 2em 1em;
+  min-height: 95px;
+  padding: 2em;
   margin-bottom: 1em;
   &--curved-border {
     min-height: 135px;
@@ -40,28 +41,27 @@ body {
 
 // StatsComponent
 
-// .section__info {
-//   margin: 0 auto;
-//   border: solid yellow 2px;
-//   text-align: center;
-// }
+.section__info {
+ 
+  text-align: center;
+}
 
 .section {
   &__storage-number {
-    height: 4.5em;
-    width: 60%;
+    height: 4em;
+    width: 48%;
     border-radius: 10px;
-    margin: 0 auto;
     background: white;
     position: absolute;
-    top: 1;
+    top: 73%;
+right: 25%;
   }
 }
 .section__progress-bar {
   background-color: $neutral-very-dark-blue;
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  margin: 2em auto;
+  margin: 1em auto;
   height: 12px;
   max-width: 90%;
   padding: 3px;

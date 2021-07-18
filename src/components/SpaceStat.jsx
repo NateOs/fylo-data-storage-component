@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SpaceStat() {
   return (
-    <section className="section">
+    <section className="section section__info">
         <p className="section__desc">
           You've used <span className="storage-size">815 GB</span> of your
           storage
