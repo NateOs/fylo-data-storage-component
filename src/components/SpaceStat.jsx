@@ -2,7 +2,8 @@ import React from "react";
 
 export default function SpaceStat() {
   return (
-    <section className="section section__info">
+    <>
+      <section className="section section__info">
         <p className="section__desc">
           You've used <span className="storage-size">815 GB</span> of your
           storage
@@ -18,11 +19,12 @@ export default function SpaceStat() {
           <p>0 GB</p>
           <p>1000 GB</p>
         </div>
-        <div className="section__storage-number">
-          <p class="section__paragraph">
-            <span>185</span>GB LEFT
-          </p>
-        </div>
-    </section>
+      </section>
+      <div className="section__storage-number">
+        <p class="section__paragraph">
+          <span>185</span>GB LEFT
+        </p>
+      </div>
+    </>
   );
 }
