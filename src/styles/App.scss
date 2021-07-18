@@ -10,42 +10,60 @@ body {
 }
 
 .container {
+  min-height: 100vh;
   border: solid red 1px;
-  height: 600px;
-  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section {
-  width: 100%;
   border: solid green 2px;
-  min-height: 200px;
   background: $neutral-dark-blue;
   border-radius: 10px;
+  width: 77%;
   padding: 2em 1em;
+  margin-bottom: 1em;
+  &--curved-border {
+    min-height: 135px;
+    border-top-right-radius: 100px;
+  }
 }
 
 // utility
-// .flex {
-//   display: flex;
-// }
+.flex {
+  display: flex;
+}
 
 // UploaderComponent
 
 // StatsComponent
 
-.section__info {
-  width: 80%;
-  margin:0 auto;
-  border: solid yellow 2px;
-  text-align: center;
+// .section__info {
+//   margin: 0 auto;
+//   border: solid yellow 2px;
+//   text-align: center;
+// }
+
+.section {
+  &__storage-number {
+    height: 4.5em;
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: white;
+    position: absolute;
+    top: 1;
+  }
 }
 .section__progress-bar {
   background-color: $neutral-very-dark-blue;
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   margin: 2em auto;
-  height: 25px;
-  max-width: 80%;
+  height: 12px;
+  max-width: 90%;
   padding: 3px;
 }
 .section__caption {
@@ -54,16 +72,19 @@ body {
 .section__progress {
   background: $primary-gradient;
   border-radius: 20px;
-  height: 25px;
-  width: 50%;
+  height: 12px;
+  width: 80%;
   transition: width 0.5s ease-in;
   &-indicator {
-    width: 20px;
-    height: 20px;
-    margin: auto 5px auto auto;
+    width: 9px;
+    height: 9px;
+    margin: auto 2px auto auto;
     background-color: $transparent-white;
     position: relative;
-    top: 10%;
+    top: 13%;
     border-radius: 10px;
+  }
+  &__paragraph {
+    color: hsl(229, 57%, 11%);
   }
 }
