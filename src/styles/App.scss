@@ -11,7 +11,6 @@ body {
 
 .container {
   min-height: 100vh;
-  border: solid red 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,10 +18,9 @@ body {
 }
 
 .section {
-  border: solid green 2px;
   background: $neutral-dark-blue;
   border-radius: 10px;
-  width: 77%;
+  width: 73%;
   min-height: 95px;
   padding: 2em;
   margin-bottom: 1em;
@@ -36,33 +34,28 @@ body {
 .flex {
   display: flex;
 }
+.bold {
+  font-weight: 700 !important;
+}
+.ml-1 {
+  margin-left: .2em;
+}
 
 // UploaderComponent
 
 // StatsComponent
 
 .section__info {
- 
   text-align: center;
 }
 
-.section {
-  &__storage-number {
-    height: 4em;
-    width: 48%;
-    border-radius: 10px;
-    background: white;
-    position: relative;
-  top: -7vh;
-  }
-}
 .section__progress-bar {
   background-color: $neutral-very-dark-blue;
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   margin: 1em auto;
   height: 12px;
-  max-width: 90%;
+  max-width: 98%;
   padding: 3px;
 }
 .section__caption {
@@ -83,7 +76,27 @@ body {
     top: 13%;
     border-radius: 10px;
   }
-  &__paragraph {
-    color: hsl(229, 57%, 11%);
+}
+.section {
+  &__storage-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 48%;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    top: -7vh;
+    color: black;
+    text-align: center;
   }
+  &__storage-info {
+    font-size: 2.4em;
+  }
+  // &__paragraph {
+  //   color: hsl(229, 57%, 11%);
+  //   font-weight: map-get($font-weights, "bold");
+  //   font-size: 2em;
+  // }
 }
