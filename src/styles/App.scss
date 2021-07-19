@@ -147,17 +147,39 @@ body {
 // greater than desktop
 @include media(">desktop") {
   body {
-    background: url("../images/bg-desktop.png") no-repeat;
+    background-color: $neutral-dark-blue;
+    background-image: url("../images/bg-desktop.png") no-repeat;
     background-size: contain;
-  
+    background-position: center bottom;
+    background-attachment: fixed;
+  }
+  body::after {
+    position: absolute;
+    background: $neutral-dark-blue;
   }
   .container {
     display: flex;
     flex-direction: row;
     border: solid red 2px;
+    margin: 0 auto;
   }
   .section {
-    max-width: 300px;
+    max-width: 35rem;
+    min-height: 5.3rem;
+    margin: 0 1em;
+    &__info {
+      margin-top: 4.2rem;
+    }
+    &--curved-border {
+      min-height: 10.3rem;
+    max-width: 20rem;
+
+      border-top-right-radius: 100px;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+      justify-content: center;
+    }
   }
   .section__storage-info-container {
     background: red;
