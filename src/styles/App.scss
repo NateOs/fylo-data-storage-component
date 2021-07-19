@@ -28,6 +28,10 @@ body {
   &--curved-border {
     min-height: 135px;
     border-top-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
   }
 }
 
@@ -43,7 +47,26 @@ body {
 }
 
 // UploaderComponent
-
+.section {
+  &__logo {
+    margin-bottom: 1em;
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  &__actions-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    background: $neutral-very-dark-blue;
+    margin-right: 1em;
+    border-radius: 0.7em;
+  }
+}
 // StatsComponent
 
 .section__info {
@@ -95,11 +118,6 @@ body {
   &__storage-info {
     font-size: 2.4em;
   }
-  // &__paragraph {
-  //   color: hsl(229, 57%, 11%);
-  //   font-weight: map-get($font-weights, "bold");
-  //   font-size: 2em;
-  // }
 }
 
 // Media Queries
