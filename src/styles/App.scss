@@ -122,21 +122,45 @@ body {
 
 // Media Queries
 
-// grey area b/n tablet and phone
-@include media(">phone", "<=desktop") {
-  .section__storage-info-container {
-    background: red;
-  }
-}
 // less than phone
 @include media("<=phone") {
   .section__storage-info-container {
     background: yellow;
   }
 }
-// greater than desktop
-@include media(">desktop") {
+// grey area b/n tablet and phone
+@include media(">tablet", "<=desktop") {
+  .container {
+    display: flex;
+    flex-direction: row;
+    border: solid red 2px;
+  }
   .section__storage-info-container {
     background: green;
+    position: absolute;
+  }
+  .section {
+    max-width: 300px;
+  }
+}
+
+// greater than desktop
+@include media(">desktop") {
+  body {
+    background: url("../images/bg-desktop.png") no-repeat;
+    background-size: contain;
+  
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    border: solid red 2px;
+  }
+  .section {
+    max-width: 300px;
+  }
+  .section__storage-info-container {
+    background: red;
+    position: absolute;
   }
 }
