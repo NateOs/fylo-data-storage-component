@@ -1,5 +1,6 @@
 @import "config";
 @import "variables";
+@import "include-media";
 
 // Globals
 body {
@@ -38,7 +39,7 @@ body {
   font-weight: 700 !important;
 }
 .ml-1 {
-  margin-left: .2em;
+  margin-left: 0.2em;
 }
 
 // UploaderComponent
@@ -99,4 +100,25 @@ body {
   //   font-weight: map-get($font-weights, "bold");
   //   font-size: 2em;
   // }
+}
+
+// Media Queries
+
+// grey area b/n tablet and phone
+@include media(">phone", "<=desktop") {
+  .section__storage-info-container {
+    background: red;
+  }
+}
+// less than phone
+@include media("<=phone") {
+  .section__storage-info-container {
+    background: yellow;
+  }
+}
+// greater than desktop
+@include media(">desktop") {
+  .section__storage-info-container {
+    background: green;
+  }
 }
