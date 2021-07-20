@@ -6,6 +6,7 @@
 body {
   background: url("../images/bg-mobile.png") repeat;
   background-size: cover;
+  background-attachment: fixed;
   font-family: $font-Raleway;
   color: $transparent-white;
 }
@@ -145,18 +146,14 @@ body {
 }
 
 // greater than desktop
-@include media(">desktop") {
+@include media(">=desktop") {
   body {
-    background-color: $neutral-dark-blue;
-    background-image: url("../images/bg-desktop.png") no-repeat;
+    background: url("../images/bg-desktop.png") no-repeat;
+    background-position:1px 50vh;
     background-size: contain;
-    background-position: center bottom;
-    background-attachment: fixed;
+    background-color: $neutral-very-dark-blue;
   }
-  body::after {
-    position: absolute;
-    background: $neutral-dark-blue;
-  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -172,7 +169,7 @@ body {
     }
     &--curved-border {
       min-height: 10.3rem;
-    max-width: 20rem;
+      max-width: 20rem;
 
       border-top-right-radius: 100px;
       display: flex;
