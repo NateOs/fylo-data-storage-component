@@ -131,21 +131,57 @@ body {
 }
 // grey area b/n tablet and phone
 @include media(">tablet", "<=desktop") {
+  body {
+    background: url("../images/bg-desktop.png") no-repeat;
+    background-position: 1px 50vh;
+    background-size: contain;
+    background-color: $neutral-very-dark-blue;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
-    border: solid red 2px;
-  }
-  .section__storage-info-container {
-    background: green;
-    position: absolute;
+    margin: 0 auto;
   }
   .section {
-    max-width: 300px;
+    max-width: 35rem;
+    min-height: 5.3rem;
+    margin: 0 1em;
+    &__info {
+      margin-top: 4.2rem;
+    }
+    &--curved-border {
+      min-height: 10.3rem;
+      max-width: 20rem;
+
+      border-top-right-radius: 100px;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+      justify-content: center;
+    }
+  }
+  .section__storage-info-container {
+    width: 10em;
+    max-height: 3.5em;
+    position: absolute;
+    top: 40vh;
+    right: 7%;
+  }
+  .section__storage-info-container::before {
+    content: "";
+    border-top: 15px solid white;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 5vh;
+    right: 0vw;
   }
 }
 
-// greater than desktop
+// greater than or desktop
 @include media(">=desktop") {
   body {
     background: url("../images/bg-desktop.png") no-repeat;
@@ -181,7 +217,7 @@ body {
     width: 10em;
     position: absolute;
     top: 41vh;
-    right: 23%;
+    right: 25%;
   }
   .section__storage-info-container::before {
     content: "";
