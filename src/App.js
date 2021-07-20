@@ -1,6 +1,6 @@
 import "./styles/App.scss";
 import Uploader from "./components/Uploader";
-import SpaceStat from "./components/SpaceStat";
+import SpaceStat from "./components/SpaceStats";
 
 function App() {
   return (
