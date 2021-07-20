@@ -149,7 +149,7 @@ body {
 @include media(">=desktop") {
   body {
     background: url("../images/bg-desktop.png") no-repeat;
-    background-position:1px 50vh;
+    background-position: 1px 50vh;
     background-size: contain;
     background-color: $neutral-very-dark-blue;
   }
@@ -157,7 +157,6 @@ body {
   .container {
     display: flex;
     flex-direction: row;
-    border: solid red 2px;
     margin: 0 auto;
   }
   .section {
@@ -179,7 +178,20 @@ body {
     }
   }
   .section__storage-info-container {
-    background: red;
+    width: 10em;
     position: absolute;
+    top: 41vh;
+    right: 23%;
+  }
+  .section__storage-info-container::before {
+    content: "";
+    border-top: 15px solid white;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 5.5vh;
+    right: 0vh;
   }
 }
