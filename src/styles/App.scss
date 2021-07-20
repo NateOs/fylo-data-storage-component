@@ -226,3 +226,23 @@ body {
     right: 0vh;
   }
 }
+// greater than or desktop
+@include media(">=HD") {
+ 
+  .section__storage-info-container {
+    width: 10em;
+    position: absolute;
+    top: 39vh;
+    right: 25%;
+  }
+  .section__storage-info-container::before {
+    content: "";
+    border-top: 15px solid white;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 5.5vh;
+    right: 0vh;
+  }
+}
