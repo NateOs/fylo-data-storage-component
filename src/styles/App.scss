@@ -123,12 +123,7 @@ body {
 
 // Media Queries
 
-// less than phone
-@include media("<=phone") {
-  .section__storage-info-container {
-    background: yellow;
-  }
-}
+
 // grey area b/n tablet and phone
 @include media(">tablet", "<=desktop") {
   body {
@@ -216,8 +211,8 @@ body {
   .section__storage-info-container {
     width: 10em;
     position: absolute;
-    top: 41vh;
-    right: 25%;
+    top: 39vh;
+    right: 18%;
   }
   .section__storage-info-container::before {
     content: "";
